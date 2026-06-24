@@ -1,0 +1,44 @@
+body {
+            margin: 0;
+            background-color: white;
+            color: #333;
+            font-family: "Yu Gothic", sans-serif;
+            text-align: center;
+
+            
+}
+
+header {
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+            color:black
+            
+}
+
+h1 {
+            font-size: 3rem;
+            margin: 0;
+            color:black
+}
+
+h2{
+    font-size: 3rem;
+    color:lightblue
+}
+
+h3{
+    font-size:2rem;
+    
+}
+
+hr {
+  border: none;              /* デフォルトのボーダーを消す */
+  border-top: 5px solid lightblue;  /* 新しいスタイルを指定 */
+  width: 90%;               /* 幅を50%に */
+  margin: 5px auto;        /* 上下20px、左右中央寄せ */
+}
+
