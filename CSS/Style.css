@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: "Yu Gothic", sans-serif;
+    text-align: center;
+}
+
+/* ヘッダー */
+header {
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 一番上のタイトル */
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+/* ProfileやProgrammingなど */
+h2 {
+    font-size: 48px;
+    color: lightblue;
+    margin: 40px 0 20px 0;
+}
+
+/* 名前 */
+h3 {
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+/* 本文 */
+p {
+    font-size: 28px;
+    line-height: 50px;
+}
+
+/* 線 */
+hr {
+    border: none;
+    border-top: 5px solid lightblue;
+    width: 90%;
+    margin: 0 auto;
+}
+.skill {
+    display: inline-block;
+    background-color: yellow;
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
