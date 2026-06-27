@@ -85,14 +85,10 @@ body{
 }
 
 .profile-box{
-    width: min(85vw, 1000px);
-    height: 700px;
+    width: 1200px;
+    height: 780px;
 
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
 
     background-image: url("../Image/ProfilePlate.png");
     background-size: 100% 100%;
@@ -101,128 +97,133 @@ body{
     color: white;
 }
 .name-box{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+
+    transform: translate(-50%,25%);
     text-align: center;
-    margin-top: 15px;
 }
 
 .roman{
-    color: #9ed8ff;
-    letter-spacing: 6px;
-    font-size: 18px;
-
     margin: 0;
-    margin-bottom: 5px;
+    color: #82b6ff;
+    font-size: 18px;
+    letter-spacing: 8px;
 }
 
 .name-box h2{
-    font-size: 50px;
-    margin: 0;
+    margin: 5px 0 0 0;
 
-    text-shadow:
-        3px 3px 0 #000,
-        0 0 10px rgba(255,255,255,0.2);
-
+    font-size: 65px;
     line-height: 1;
 }
 
-.profile-main{
-    width: 100%;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.skill-box{
+    position: absolute;
 
-    margin: 10px 0;
-    gap: 40px;
+    left: 90px;
+    top: 180px;
 
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-.skill-box,
-.text-box{
-    width: 280px;
+    width: 230px;
 }
 
-.skill-box h3,
-.text-box h3{
-    color: #9ed8ff;
+.skill-box h3{
+    font-size: 30px;
+    color: #84b8ff;
+
     text-align: center;
-    font-size: 42px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+    transform: translate(1%,-82%)
 }
 
 .skill-box p{
-    font-size: 36px;
-    line-height: 2;
-}
-
-.text-box p{
     font-size: 30px;
-    line-height: 1.8;
+
+    margin: 15px 0;
+
+    border-bottom: 2px solid rgba(255,255,255,0.15);
+    padding-bottom: 2%;
+    transform: translate(10%,-150%)
+}
+.photo-box{
+    position: absolute;
+
+    width: 320px;
+    height: 340px;
+
+    left: 50%;
+    top: 260px;
+
+    transform: translate(-54.5%,-20%);
 }
 
 .photo-box img{
-    width: 380px;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.text-box{
+    position: absolute;
+
+    right: 100px;
+    top: 136px;
+
+    width: 240px;
+}
+
+.text-box h3{
+    font-size: 30px;
+
+    color: #84b8ff;
+    text-align: center;
+
+    margin-bottom: 35px;
+    transform:translate(-3%,30%)
+}
+
+.text-box p{
+    font-size: 24px;
+
+    line-height: 1.9;
+    transform:translate(2%,-6%)
 }
 
 .school-box{
+    position: absolute;
+
+    width: 500px;
+
+    left: 50%;
+    bottom: 45px;
+
+    transform: translate(-50%,10%);
+
     text-align: center;
-    line-height: 2;
-    font-size: 28px;
-    margin-top: 10px;
+
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+.school-box p{
+    margin: 5px 0;
 }
 
 @media (max-width: 768px){
 
-    .world{
-        flex-direction: column;
-        overflow-y: auto;
-        overflow-x: hidden;
-        height: auto;
-    }
-
     .stage{
-        width: 100%;
-        min-height: 100vh;
-        padding: 30px 0;
+        overflow-y: auto;
+        padding: 20px 0;
     }
 
-    .profile-main{
-        flex-direction: column;
-        gap: 30px;
-    }
+    .profile-box{
+        width: 95vw;
+        height: calc(95vw * 0.708);
 
-    .name-box h2{
-        font-size: 48px;
-    }
-
-    .roman{
-        font-size: 16px;
-    }
-
-    .skill-box,
-    .text-box{
-        width: 90%;
-        text-align: center;
-    }
-
-    .skill-box h3,
-    .text-box h3{
-        font-size: 28px;
-    }
-
-    .skill-box p,
-    .text-box p{
-        font-size: 20px;
-    }
-
-    .photo-box img{
-        width: 240px;
-    }
-
-    .school-box{
-        font-size: 16px;
+        transform: scale(0.7);
+        transform-origin: center top;
     }
 }
